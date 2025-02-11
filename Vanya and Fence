@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+const int MAX_SIZE=1000;
+int height[MAX_SIZE];
+int main()
+{
+    int n,h,i;
+    int w=0;
+    cin>>n>>h;
+for(i=0;i<n;i++){
+    cin>>height[i];
+    if(height[i]>h)
+        w+=2;
+    else{
+        w+=1;
+    }
+}
+    cout<<w<<endl;
+    return 0;
+}

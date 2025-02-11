@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main()
+{int n,i;
+ cin>>n;
+ int Vasya,Tonya,Petya;
+ int solved=0;
+ for(i=0;i<n;i++){
+    cin>> Petya  >> Vasya  >> Tonya ;
+   int solved_count=Petya+Vasya+Tonya;
+    if(solved_count>=2){
+        solved++;
+    }
+     }
+      cout<<solved<<endl;
+    return 0;
+}
